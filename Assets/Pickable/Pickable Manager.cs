@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PickableManager : MonoBehaviour
 {
@@ -40,7 +41,7 @@ public class PickableManager : MonoBehaviour
         }
         if (_pickableList.Count <= 0)
         {
-            
+            SceneManager.LoadScene("Win screen");
         }
     }
 }
